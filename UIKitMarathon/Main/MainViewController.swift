@@ -16,7 +16,7 @@ final class MainViewController: UIViewController {
         view.backgroundColor = .systemRed
         
         setupTasks()
-        print(tasks.first?.id)
+//        print(tasks.first?.id)
         print(tasks.first?.title)
         print(tasks.first?.text)
         print(tasks.first?.url)
@@ -29,11 +29,18 @@ final class MainViewController: UIViewController {
 
     
     private func setupTasks() {
+        let currentLocale = Locale.current.identifier
+        
         var arrayOfNames = [String]()
         var ids = [UInt8]()
         
         for i in 1...9 {
-            let fileName = "Task\(i)Text_base64"
+            var fileName = String()
+            if currentLocale.contains("ru") || currentLocale.contains("RU") {
+                fileName = "Task\(i)Text_base64"
+            } else {
+                fileName = "Task\(i)Text_base64_en"
+            }
             arrayOfNames.append(fileName)
             ids.append(UInt8(i))
         }
