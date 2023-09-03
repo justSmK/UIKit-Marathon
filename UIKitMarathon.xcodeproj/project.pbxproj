@@ -36,6 +36,15 @@
 		BB8FADCA2AA504C20016BA5C /* ViewControllerCompactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADC02AA504C20016BA5C /* ViewControllerCompactController.swift */; };
 		BB8FADCB2AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADC22AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift */; };
 		BB8FADCD2AA504DA0016BA5C /* AppOrientationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADCC2AA504DA0016BA5C /* AppOrientationUtility.swift */; };
+		BB8FADD82AA50E8A0016BA5C /* Task9.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADCF2AA50E8A0016BA5C /* Task9.mp4 */; };
+		BB8FADD92AA50E8A0016BA5C /* Task8.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD02AA50E8A0016BA5C /* Task8.mp4 */; };
+		BB8FADDA2AA50E8A0016BA5C /* Task3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD12AA50E8A0016BA5C /* Task3.mp4 */; };
+		BB8FADDB2AA50E8A0016BA5C /* Task2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD22AA50E8A0016BA5C /* Task2.mp4 */; };
+		BB8FADDC2AA50E8A0016BA5C /* Task1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD32AA50E8A0016BA5C /* Task1.mp4 */; };
+		BB8FADDD2AA50E8A0016BA5C /* Task5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD42AA50E8A0016BA5C /* Task5.mp4 */; };
+		BB8FADDE2AA50E8A0016BA5C /* Task4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD52AA50E8A0016BA5C /* Task4.mp4 */; };
+		BB8FADDF2AA50E8A0016BA5C /* Task6.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD62AA50E8A0016BA5C /* Task6.mp4 */; };
+		BB8FADE02AA50E8A0016BA5C /* Task7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD72AA50E8A0016BA5C /* Task7.mp4 */; };
 		BB9B4F3F2AA48EFA008FEEB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F3E2AA48EFA008FEEB8 /* AppDelegate.swift */; };
 		BB9B4F412AA48EFA008FEEB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F402AA48EFA008FEEB8 /* SceneDelegate.swift */; };
 		BB9B4F432AA48EFA008FEEB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F422AA48EFA008FEEB8 /* MainViewController.swift */; };
@@ -74,6 +83,15 @@
 		BB8FADC02AA504C20016BA5C /* ViewControllerCompactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCompactController.swift; sourceTree = "<group>"; };
 		BB8FADC22AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerCaringCollection.swift; sourceTree = "<group>"; };
 		BB8FADCC2AA504DA0016BA5C /* AppOrientationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOrientationUtility.swift; sourceTree = "<group>"; };
+		BB8FADCF2AA50E8A0016BA5C /* Task9.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task9.mp4; sourceTree = "<group>"; };
+		BB8FADD02AA50E8A0016BA5C /* Task8.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task8.mp4; sourceTree = "<group>"; };
+		BB8FADD12AA50E8A0016BA5C /* Task3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task3.mp4; sourceTree = "<group>"; };
+		BB8FADD22AA50E8A0016BA5C /* Task2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task2.mp4; sourceTree = "<group>"; };
+		BB8FADD32AA50E8A0016BA5C /* Task1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task1.mp4; sourceTree = "<group>"; };
+		BB8FADD42AA50E8A0016BA5C /* Task5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task5.mp4; sourceTree = "<group>"; };
+		BB8FADD52AA50E8A0016BA5C /* Task4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task4.mp4; sourceTree = "<group>"; };
+		BB8FADD62AA50E8A0016BA5C /* Task6.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task6.mp4; sourceTree = "<group>"; };
+		BB8FADD72AA50E8A0016BA5C /* Task7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Task7.mp4; sourceTree = "<group>"; };
 		BB9B4F3B2AA48EFA008FEEB8 /* UIKitMarathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitMarathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9B4F3E2AA48EFA008FEEB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9B4F402AA48EFA008FEEB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +125,7 @@
 		BB8FAD792AA4F8EB0016BA5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB8FADCE2AA50E8A0016BA5C /* videos */,
 				BB8FAD9D2AA503050016BA5C /* base64TaskTexts_en */,
 				BB8FAD802AA4FE680016BA5C /* base64TaskTexts_ru */,
 				BB9B4F472AA48EFB008FEEB8 /* Assets.xcassets */,
@@ -245,6 +264,22 @@
 			path = "Caring Collection";
 			sourceTree = "<group>";
 		};
+		BB8FADCE2AA50E8A0016BA5C /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADCF2AA50E8A0016BA5C /* Task9.mp4 */,
+				BB8FADD02AA50E8A0016BA5C /* Task8.mp4 */,
+				BB8FADD12AA50E8A0016BA5C /* Task3.mp4 */,
+				BB8FADD22AA50E8A0016BA5C /* Task2.mp4 */,
+				BB8FADD32AA50E8A0016BA5C /* Task1.mp4 */,
+				BB8FADD42AA50E8A0016BA5C /* Task5.mp4 */,
+				BB8FADD52AA50E8A0016BA5C /* Task4.mp4 */,
+				BB8FADD62AA50E8A0016BA5C /* Task6.mp4 */,
+				BB8FADD72AA50E8A0016BA5C /* Task7.mp4 */,
+			);
+			path = videos;
+			sourceTree = "<group>";
+		};
 		BB9B4F322AA48EFA008FEEB8 = {
 			isa = PBXGroup;
 			children = (
@@ -331,14 +366,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8FADD82AA50E8A0016BA5C /* Task9.mp4 in Resources */,
 				BB8FAD912AA4FE680016BA5C /* Task2Text_base64.txt in Resources */,
 				BB8FADA92AA503050016BA5C /* Task9Text_base64_en.txt in Resources */,
 				BB8FADAE2AA503050016BA5C /* Task2Text_base64_en.txt in Resources */,
+				BB8FADDA2AA50E8A0016BA5C /* Task3.mp4 in Resources */,
 				BB8FADA72AA503050016BA5C /* Task7Text_base64_en.txt in Resources */,
 				BB9B4F4B2AA48EFB008FEEB8 /* LaunchScreen.storyboard in Resources */,
 				BB8FADAB2AA503050016BA5C /* Task6Text_base64_en.txt in Resources */,
 				BB8FAD922AA4FE680016BA5C /* Task5Text_base64.txt in Resources */,
+				BB8FADDF2AA50E8A0016BA5C /* Task6.mp4 in Resources */,
 				BB8FADA82AA503050016BA5C /* Task8Text_base64_en.txt in Resources */,
+				BB8FADD92AA50E8A0016BA5C /* Task8.mp4 in Resources */,
+				BB8FADE02AA50E8A0016BA5C /* Task7.mp4 in Resources */,
 				BB8FAD8A2AA4FE680016BA5C /* Task7Text_base64.txt in Resources */,
 				BB8FAD8F2AA4FE680016BA5C /* Task4Text_base64.txt in Resources */,
 				BB8FADAA2AA503050016BA5C /* Task1Text_base64_en.txt in Resources */,
@@ -346,9 +386,13 @@
 				BB8FAD8B2AA4FE680016BA5C /* Task8Text_base64.txt in Resources */,
 				BB9B4F482AA48EFB008FEEB8 /* Assets.xcassets in Resources */,
 				BB8FADAC2AA503050016BA5C /* Task4Text_base64_en.txt in Resources */,
+				BB8FADDC2AA50E8A0016BA5C /* Task1.mp4 in Resources */,
 				BB8FADAF2AA503050016BA5C /* Task5Text_base64_en.txt in Resources */,
 				BB8FAD902AA4FE680016BA5C /* Task3Text_base64.txt in Resources */,
 				BB8FADAD2AA503050016BA5C /* Task3Text_base64_en.txt in Resources */,
+				BB8FADDD2AA50E8A0016BA5C /* Task5.mp4 in Resources */,
+				BB8FADDB2AA50E8A0016BA5C /* Task2.mp4 in Resources */,
+				BB8FADDE2AA50E8A0016BA5C /* Task4.mp4 in Resources */,
 				BB8FAD8D2AA4FE680016BA5C /* Task1Text_base64.txt in Resources */,
 				BB8FAD8E2AA4FE680016BA5C /* Task6Text_base64.txt in Resources */,
 			);
