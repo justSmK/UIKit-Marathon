@@ -26,6 +26,16 @@
 		BB8FADAD2AA503050016BA5C /* Task3Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADA42AA503050016BA5C /* Task3Text_base64_en.txt */; };
 		BB8FADAE2AA503050016BA5C /* Task2Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADA52AA503050016BA5C /* Task2Text_base64_en.txt */; };
 		BB8FADAF2AA503050016BA5C /* Task5Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADA62AA503050016BA5C /* Task5Text_base64_en.txt */; };
+		BB8FADC32AA504C20016BA5C /* ViewControllerStretchingPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADB22AA504C10016BA5C /* ViewControllerStretchingPicture.swift */; };
+		BB8FADC42AA504C20016BA5C /* ViewControllerGradientAndShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADB42AA504C10016BA5C /* ViewControllerGradientAndShadow.swift */; };
+		BB8FADC52AA504C20016BA5C /* ViewControllerInertialSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADB62AA504C10016BA5C /* ViewControllerInertialSquare.swift */; };
+		BB8FADC62AA504C20016BA5C /* ViewControllerNativeAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADB82AA504C10016BA5C /* ViewControllerNativeAvatar.swift */; };
+		BB8FADC72AA504C20016BA5C /* ViewControllerLinkedAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADBA2AA504C10016BA5C /* ViewControllerLinkedAnimation.swift */; };
+		BB8FADC82AA504C20016BA5C /* ViewControllerThreeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADBC2AA504C10016BA5C /* ViewControllerThreeButtons.swift */; };
+		BB8FADC92AA504C20016BA5C /* ViewControllerMixerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADBE2AA504C10016BA5C /* ViewControllerMixerTable.swift */; };
+		BB8FADCA2AA504C20016BA5C /* ViewControllerCompactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADC02AA504C20016BA5C /* ViewControllerCompactController.swift */; };
+		BB8FADCB2AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADC22AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift */; };
+		BB8FADCD2AA504DA0016BA5C /* AppOrientationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADCC2AA504DA0016BA5C /* AppOrientationUtility.swift */; };
 		BB9B4F3F2AA48EFA008FEEB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F3E2AA48EFA008FEEB8 /* AppDelegate.swift */; };
 		BB9B4F412AA48EFA008FEEB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F402AA48EFA008FEEB8 /* SceneDelegate.swift */; };
 		BB9B4F432AA48EFA008FEEB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F422AA48EFA008FEEB8 /* MainViewController.swift */; };
@@ -54,6 +64,16 @@
 		BB8FADA52AA503050016BA5C /* Task2Text_base64_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task2Text_base64_en.txt; sourceTree = "<group>"; };
 		BB8FADA62AA503050016BA5C /* Task5Text_base64_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task5Text_base64_en.txt; sourceTree = "<group>"; };
 		BB8FADB02AA503F00016BA5C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		BB8FADB22AA504C10016BA5C /* ViewControllerStretchingPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerStretchingPicture.swift; sourceTree = "<group>"; };
+		BB8FADB42AA504C10016BA5C /* ViewControllerGradientAndShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGradientAndShadow.swift; sourceTree = "<group>"; };
+		BB8FADB62AA504C10016BA5C /* ViewControllerInertialSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerInertialSquare.swift; sourceTree = "<group>"; };
+		BB8FADB82AA504C10016BA5C /* ViewControllerNativeAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerNativeAvatar.swift; sourceTree = "<group>"; };
+		BB8FADBA2AA504C10016BA5C /* ViewControllerLinkedAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerLinkedAnimation.swift; sourceTree = "<group>"; };
+		BB8FADBC2AA504C10016BA5C /* ViewControllerThreeButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerThreeButtons.swift; sourceTree = "<group>"; };
+		BB8FADBE2AA504C10016BA5C /* ViewControllerMixerTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMixerTable.swift; sourceTree = "<group>"; };
+		BB8FADC02AA504C20016BA5C /* ViewControllerCompactController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCompactController.swift; sourceTree = "<group>"; };
+		BB8FADC22AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewControllerCaringCollection.swift; sourceTree = "<group>"; };
+		BB8FADCC2AA504DA0016BA5C /* AppOrientationUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOrientationUtility.swift; sourceTree = "<group>"; };
 		BB9B4F3B2AA48EFA008FEEB8 /* UIKitMarathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitMarathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9B4F3E2AA48EFA008FEEB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9B4F402AA48EFA008FEEB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +99,7 @@
 			children = (
 				BB9B4F402AA48EFA008FEEB8 /* SceneDelegate.swift */,
 				BB9B4F3E2AA48EFA008FEEB8 /* AppDelegate.swift */,
+				BB8FADCC2AA504DA0016BA5C /* AppOrientationUtility.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -123,6 +144,15 @@
 		BB8FAD9C2AA502AD0016BA5C /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				BB8FADC12AA504C20016BA5C /* Caring Collection */,
+				BB8FADBF2AA504C20016BA5C /* Compact Controller */,
+				BB8FADB32AA504C10016BA5C /* Gradient and Shadow */,
+				BB8FADB52AA504C10016BA5C /* Inertial Square */,
+				BB8FADB92AA504C10016BA5C /* Linked Animation */,
+				BB8FADBD2AA504C10016BA5C /* Mixer Table */,
+				BB8FADB72AA504C10016BA5C /* Native Avatar */,
+				BB8FADB12AA504C10016BA5C /* Stretching Picture */,
+				BB8FADBB2AA504C10016BA5C /* Three buttons */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -141,6 +171,78 @@
 				BB8FADA62AA503050016BA5C /* Task5Text_base64_en.txt */,
 			);
 			path = base64TaskTexts_en;
+			sourceTree = "<group>";
+		};
+		BB8FADB12AA504C10016BA5C /* Stretching Picture */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADB22AA504C10016BA5C /* ViewControllerStretchingPicture.swift */,
+			);
+			path = "Stretching Picture";
+			sourceTree = "<group>";
+		};
+		BB8FADB32AA504C10016BA5C /* Gradient and Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADB42AA504C10016BA5C /* ViewControllerGradientAndShadow.swift */,
+			);
+			path = "Gradient and Shadow";
+			sourceTree = "<group>";
+		};
+		BB8FADB52AA504C10016BA5C /* Inertial Square */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADB62AA504C10016BA5C /* ViewControllerInertialSquare.swift */,
+			);
+			path = "Inertial Square";
+			sourceTree = "<group>";
+		};
+		BB8FADB72AA504C10016BA5C /* Native Avatar */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADB82AA504C10016BA5C /* ViewControllerNativeAvatar.swift */,
+			);
+			path = "Native Avatar";
+			sourceTree = "<group>";
+		};
+		BB8FADB92AA504C10016BA5C /* Linked Animation */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADBA2AA504C10016BA5C /* ViewControllerLinkedAnimation.swift */,
+			);
+			path = "Linked Animation";
+			sourceTree = "<group>";
+		};
+		BB8FADBB2AA504C10016BA5C /* Three buttons */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADBC2AA504C10016BA5C /* ViewControllerThreeButtons.swift */,
+			);
+			path = "Three buttons";
+			sourceTree = "<group>";
+		};
+		BB8FADBD2AA504C10016BA5C /* Mixer Table */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADBE2AA504C10016BA5C /* ViewControllerMixerTable.swift */,
+			);
+			path = "Mixer Table";
+			sourceTree = "<group>";
+		};
+		BB8FADBF2AA504C20016BA5C /* Compact Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADC02AA504C20016BA5C /* ViewControllerCompactController.swift */,
+			);
+			path = "Compact Controller";
+			sourceTree = "<group>";
+		};
+		BB8FADC12AA504C20016BA5C /* Caring Collection */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FADC22AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift */,
+			);
+			path = "Caring Collection";
 			sourceTree = "<group>";
 		};
 		BB9B4F322AA48EFA008FEEB8 = {
@@ -259,10 +361,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB8FADC62AA504C20016BA5C /* ViewControllerNativeAvatar.swift in Sources */,
+				BB8FADC92AA504C20016BA5C /* ViewControllerMixerTable.swift in Sources */,
+				BB8FADC42AA504C20016BA5C /* ViewControllerGradientAndShadow.swift in Sources */,
+				BB8FADCB2AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift in Sources */,
+				BB8FADC82AA504C20016BA5C /* ViewControllerThreeButtons.swift in Sources */,
 				BB8FAD7C2AA4FCE80016BA5C /* Task.swift in Sources */,
 				BB9B4F432AA48EFA008FEEB8 /* MainViewController.swift in Sources */,
+				BB8FADCD2AA504DA0016BA5C /* AppOrientationUtility.swift in Sources */,
+				BB8FADC32AA504C20016BA5C /* ViewControllerStretchingPicture.swift in Sources */,
 				BB9B4F3F2AA48EFA008FEEB8 /* AppDelegate.swift in Sources */,
+				BB8FADC52AA504C20016BA5C /* ViewControllerInertialSquare.swift in Sources */,
 				BB9B4F412AA48EFA008FEEB8 /* SceneDelegate.swift in Sources */,
+				BB8FADCA2AA504C20016BA5C /* ViewControllerCompactController.swift in Sources */,
+				BB8FADC72AA504C20016BA5C /* ViewControllerLinkedAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
