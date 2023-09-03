@@ -67,6 +67,7 @@
 		BB8FAD792AA4F8EB0016BA5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB8FAD802AA4FE680016BA5C /* base64TaskTexts_ru */,
 				BB9B4F472AA48EFB008FEEB8 /* Assets.xcassets */,
 				BB9B4F4C2AA48EFB008FEEB8 /* Info.plist */,
 				BB9B4F492AA48EFB008FEEB8 /* LaunchScreen.storyboard */,
@@ -79,7 +80,6 @@
 			children = (
 				BB9B4F422AA48EFA008FEEB8 /* MainViewController.swift */,
 				BB8FAD7B2AA4FCE80016BA5C /* Task.swift */,
-				BB8FAD802AA4FE680016BA5C /* base64TaskTexts_ru */,
 			);
 			path = Main;
 			sourceTree = "<group>";
