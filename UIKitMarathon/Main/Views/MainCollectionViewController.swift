@@ -7,14 +7,9 @@
 
 import UIKit
 
-import AVFoundation
-import AVKit
-
 final class MainCollectionViewController: UICollectionViewController {
     
     var presenter: MainPresenterProtocol?
-    
-    var player: AVPlayer?
     
     private enum Section {
         case taskName
@@ -91,42 +86,6 @@ final class MainCollectionViewController: UICollectionViewController {
             
             return cell
         })
-    }
-    
-    
-    private func testVideos() {
-        if let path = Bundle.main.path(forResource: "Task1", ofType: "mp4") {
-            print("Success")
-            let videoURL = URL(fileURLWithPath: path)
-            let player = AVPlayer(url: videoURL)
-            let playerViewController = AVPlayerViewController()
-            playerViewController.player = player
-            present(playerViewController, animated: true) {
-                player.play()
-            }
-            
-        }
-    }
-    
-    private func prepareVideoForPlayer() {
-        if let path = Bundle.main.path(forResource: "Task1", ofType: "mp4") {
-            let videoURL = URL(fileURLWithPath: path)
-            
-            // Инициализация AVPlayer
-            player = AVPlayer(url: videoURL)
-            
-            // Создание AVPlayerLayer и привязка его к AVPlayer
-            let playerLayer = AVPlayerLayer(player: player)
-            
-            // Установка размера и положения
-            playerLayer.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
-            
-            // Добавление playerLayer как sublayer к UIView
-            self.view.layer.addSublayer(playerLayer)
-            
-            // Запуск видео
-            player?.play()
-        }
     }
     
 }

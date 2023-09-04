@@ -9,5 +9,6 @@ import Foundation
 
 protocol BridgePresenterProtocol: AnyObject {
     var task: Task { get }
-    func didTapShowViewController(id: UInt8)
+    func showTaskViewController()
+    func showVideoTask()
 }

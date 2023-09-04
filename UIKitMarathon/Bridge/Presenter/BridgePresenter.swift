@@ -9,6 +9,8 @@ import Foundation
 
 final class BridgePresenter: BridgePresenterProtocol {
     
+    
+    
     private weak var view: BridgeViewProtocol?
     
     private let router: RouterProtocol
@@ -21,8 +23,12 @@ final class BridgePresenter: BridgePresenterProtocol {
         self.router = router
     }
     
-    func didTapShowViewController(id: UInt8) {
+    func showTaskViewController() {
         let id = task.id
         router.showTaskViewController(id: id)
+    }
+    
+    func showVideoTask() {
+        
     }
 }

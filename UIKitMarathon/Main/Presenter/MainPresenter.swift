@@ -84,7 +84,7 @@ private extension MainPresenter {
                 }
                 
             } else {
-                print("Base64 decoding failed.")
+                print("Base64 \(id) \(name) decoding failed.")
             }
             
         } catch {

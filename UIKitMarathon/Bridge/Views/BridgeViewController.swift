@@ -7,35 +7,61 @@
 
 import UIKit
 
+import AVFoundation
+import AVKit
+
 final class BridgeViewController: UIViewController {
     
     var presenter: BridgePresenterProtocol?
     
-    private var item: IndexPath.Element?
     
-    private lazy var textViewContent: UITextView = {
+//    private var player: AVPlayer?
+    
+    private let stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        stackView.alignment = .center
+        stackView.distribution = .equalCentering
+        return stackView
+    }()
+    
+    private let textViewContent: UITextView = {
         let textView = UITextView()
-        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.backgroundColor = .systemGray6
         textView.isEditable = false
         textView.isScrollEnabled = true
         textView.isUserInteractionEnabled = true
-        textView.layer.cornerRadius = 25
-        textView.font = .systemFont(ofSize: 22)
+        textView.layer.cornerRadius = 10
         textView.layer.cornerCurve = .continuous
+        textView.font = .systemFont(ofSize: 22)
         textView.textLayoutManager?.usesHyphenation = true
         return textView
     }()
     
-    private lazy var button: UIButton = {
+    private lazy var buttonShowSolution: UIButton = {
         let button = UIButton(type: .system)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Show solution", for: .normal)
-        button.layer.cornerRadius = 25
+        button.setTitle(LocalizationKeys.showSolution, for: .normal)
+        button.layer.cornerRadius = 10
         button.layer.cornerCurve = .continuous
         button.titleLabel?.font = .systemFont(ofSize: 30)
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.systemBackground.cgColor
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+//        button.layer.borderWidth = 1
+//        button.layer.borderColor = UIColor.systemBackground.cgColor
+        button.addTarget(self, action: #selector(showSolutionButtonTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var buttonShowVideo: UIButton = {
+        let button = UIButton(type: .detailDisclosure)
+        button.setTitle(LocalizationKeys.showVideo, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 30)
+//        button.layer.cornerRadius = 25
+//        button.layer.cornerCurve = .continuous
+//        button.titleLabel?.font = .systemFont(ofSize: 30)
+//        button.layer.borderWidth = 1
+//        button.layer.borderColor = UIColor.systemBackground.cgColor
+        button.addTarget(self, action: #selector(showVideoButtonTapped), for: .touchUpInside)
         return button
     }()
     
@@ -43,72 +69,98 @@ final class BridgeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
+        title = presenter?.task.title
+        
         setupView()
+        
+        
+//        testVideos()
+        
+        textViewContent.text = presenter?.task.text
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.navigationBar.tintColor = .link
-        navigationController?.navigationBar.prefersLargeTitles = false
-        view.preservesSuperviewLayoutMargins = false
+    override func viewWillLayoutSubviews() {
+
     }
+    
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//
+//        navigationController?.navigationBar.tintColor = .link
+//        navigationController?.navigationBar.prefersLargeTitles = false
+//        view.preservesSuperviewLayoutMargins = false
+//    }
     
     private func setupView() {
-        view.addSubview(textViewContent)
-        view.addSubview(button)
+        view.addSubview(stackView)
+        
+        stackView.addArrangedSubview(textViewContent)
+        stackView.addArrangedSubview(buttonShowVideo)
+        stackView.addArrangedSubview(buttonShowSolution)
         
         NSLayoutConstraint.activate([
-            button.leadingAnchor.constraint(equalTo: textViewContent.leadingAnchor),
-            button.trailingAnchor.constraint(equalTo: textViewContent.trailingAnchor),
-            button.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-            button.heightAnchor.constraint(equalToConstant: 100),
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            stackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            stackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             
-            textViewContent.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
-            textViewContent.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
-            textViewContent.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10),
-            textViewContent.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -10)
+            textViewContent.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.9),
+            textViewContent.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.6),
         ])
     }
     
-    public func settingsData(title: String, text: String, item: IndexPath.Element) {
-        self.title = title
-        textViewContent.text = text
-        self.item = item
+    @objc
+    private func showSolutionButtonTapped(_ sender: UIButton) {
+        if let presenter {
+            presenter.showTaskViewController()
+        }
     }
     
     @objc
-    private func buttonTapped(_ sender: UIButton) {
-        guard let item else { return }
-        showViewController(item: item)
+    private func showVideoButtonTapped(_ sender: UIButton) {
+        if let presenter {
+            let id = presenter.task.id
+            showVideo(id: id)
+        }
     }
     
-    private func showViewController(item: IndexPath.Element) {
-        var viewController: UIViewController
-        switch item {
-        case 0:
-            viewController = ViewControllerGradientAndShadow()
-        case 1:
-            viewController = ViewControllerThreeButtons()
-        case 2:
-            viewController = ViewControllerLinkedAnimation()
-        case 3:
-            viewController = ViewControllerMixerTable()
-        case 4:
-            viewController = ViewControllerCompactController()
-        case 5:
-            viewController = ViewControllerInertialSquare()
-        case 6:
-            viewController = ViewControllerStretchingPicture()
-        case 7:
-            viewController = ViewControllerNativeAvatar()
-        case 8:
-            viewController = CollectionViewControllerCaringCollection()
-        default:
-            viewController = UIViewController()
+    private func showVideo(id: UInt8) {
+        if let path = Bundle.main.path(forResource: "Task\(id)", ofType: "mp4") {
+            let videoURL = URL(filePath: path)
+            let player = AVPlayer(url: videoURL)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            present(playerViewController, animated: true) {
+                player.play()
+            }
         }
-        navigationController?.pushViewController(viewController, animated: true)
     }
+
+    
+//    private func prepareVideoForPlayer() {
+//        if let path = Bundle.main.path(forResource: "Task1", ofType: "mp4") {
+//            let videoURL = URL(fileURLWithPath: path)
+//
+//            // Инициализация AVPlayer
+//            player = AVPlayer(url: videoURL)
+//
+//            // Создание AVPlayerLayer и привязка его к AVPlayer
+//            let playerLayer = AVPlayerLayer(player: player)
+//
+//            playerLayer.frame = playerView.bounds
+//
+//            print(playerLayer.frame)
+//            print(playerLayer.bounds)
+//
+//            playerView.layer.addSublayer(playerLayer)
+//
+//            player?.addObserver(self, forKeyPath: "status", options: [.new, .initial], context: nil)
+//
+//
+//        }
+//    }
 }
 
 extension BridgeViewController: BridgeViewProtocol {

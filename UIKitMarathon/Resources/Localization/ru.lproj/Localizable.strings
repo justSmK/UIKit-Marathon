@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  UIKitMarathon
+
+  Created by Sergei Semko on 9/5/23.
+  
+*/
+
+"showSolution" = "Показать решение";
+"showVideo" = "Показать видео";

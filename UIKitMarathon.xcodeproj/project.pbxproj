@@ -18,6 +18,9 @@
 		BB1A48402AA65DF700668979 /* AssemblyBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */; };
 		BB1A48442AA65FB700668979 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */; };
 		BB1A48472AA65FF900668979 /* MainCollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */; };
+		BB1F570F2AA67434002857ED /* Task5Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB1F570E2AA67434002857ED /* Task5Text_base64_en.txt */; };
+		BB1F57132AA67D8C002857ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB1F57152AA67D8C002857ED /* Localizable.strings */; };
+		BB1F57182AA67DCC002857ED /* LocalizationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F57172AA67DCC002857ED /* LocalizationKeys.swift */; };
 		BB5038462AA66B5D00F9F400 /* BridgePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */; };
 		BB5038482AA66B6E00F9F400 /* BridgePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */; };
 		BB50384A2AA66B9900F9F400 /* BridgeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */; };
@@ -39,7 +42,6 @@
 		BB8FADAC2AA503050016BA5C /* Task4Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADA32AA503050016BA5C /* Task4Text_base64_en.txt */; };
 		BB8FADAD2AA503050016BA5C /* Task3Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADA42AA503050016BA5C /* Task3Text_base64_en.txt */; };
 		BB8FADAE2AA503050016BA5C /* Task2Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADA52AA503050016BA5C /* Task2Text_base64_en.txt */; };
-		BB8FADAF2AA503050016BA5C /* Task5Text_base64_en.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADA62AA503050016BA5C /* Task5Text_base64_en.txt */; };
 		BB8FADC32AA504C20016BA5C /* ViewControllerStretchingPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADB22AA504C10016BA5C /* ViewControllerStretchingPicture.swift */; };
 		BB8FADC42AA504C20016BA5C /* ViewControllerGradientAndShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADB42AA504C10016BA5C /* ViewControllerGradientAndShadow.swift */; };
 		BB8FADC52AA504C20016BA5C /* ViewControllerInertialSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FADB62AA504C10016BA5C /* ViewControllerInertialSquare.swift */; };
@@ -78,6 +80,10 @@
 		BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderProtocol.swift; sourceTree = "<group>"; };
 		BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
 		BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewProtocol.swift; sourceTree = "<group>"; };
+		BB1F570E2AA67434002857ED /* Task5Text_base64_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task5Text_base64_en.txt; sourceTree = "<group>"; };
+		BB1F57142AA67D8C002857ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB1F57162AA67D8F002857ED /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BB1F57172AA67DCC002857ED /* LocalizationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKeys.swift; sourceTree = "<group>"; };
 		BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenter.swift; path = UIKitMarathon/Bridge/Presenter/BridgePresenter.swift; sourceTree = SOURCE_ROOT; };
 		BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenterProtocol.swift; path = UIKitMarathon/Bridge/Presenter/Contracts/BridgePresenterProtocol.swift; sourceTree = SOURCE_ROOT; };
 		BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgeViewProtocol.swift; path = UIKitMarathon/Bridge/Views/Contracts/BridgeViewProtocol.swift; sourceTree = SOURCE_ROOT; };
@@ -99,7 +105,6 @@
 		BB8FADA32AA503050016BA5C /* Task4Text_base64_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task4Text_base64_en.txt; sourceTree = "<group>"; };
 		BB8FADA42AA503050016BA5C /* Task3Text_base64_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task3Text_base64_en.txt; sourceTree = "<group>"; };
 		BB8FADA52AA503050016BA5C /* Task2Text_base64_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task2Text_base64_en.txt; sourceTree = "<group>"; };
-		BB8FADA62AA503050016BA5C /* Task5Text_base64_en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task5Text_base64_en.txt; sourceTree = "<group>"; };
 		BB8FADB02AA503F00016BA5C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		BB8FADB22AA504C10016BA5C /* ViewControllerStretchingPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerStretchingPicture.swift; sourceTree = "<group>"; };
 		BB8FADB42AA504C10016BA5C /* ViewControllerGradientAndShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerGradientAndShadow.swift; sourceTree = "<group>"; };
@@ -293,6 +298,15 @@
 			path = Contracts;
 			sourceTree = "<group>";
 		};
+		BB1F57122AA67D7E002857ED /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				BB1F57152AA67D8C002857ED /* Localizable.strings */,
+				BB1F57172AA67DCC002857ED /* LocalizationKeys.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		BB8FAD782AA4F8E50016BA5C /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +320,7 @@
 		BB8FAD792AA4F8EB0016BA5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB1F57122AA67D7E002857ED /* Localization */,
 				BB1A482B2AA634F600668979 /* Fonts */,
 				BB1A48282AA634D400668979 /* Colors */,
 				BB8FADCE2AA50E8A0016BA5C /* videos */,
@@ -370,7 +385,7 @@
 				BB8FADA32AA503050016BA5C /* Task4Text_base64_en.txt */,
 				BB8FADA42AA503050016BA5C /* Task3Text_base64_en.txt */,
 				BB8FADA52AA503050016BA5C /* Task2Text_base64_en.txt */,
-				BB8FADA62AA503050016BA5C /* Task5Text_base64_en.txt */,
+				BB1F570E2AA67434002857ED /* Task5Text_base64_en.txt */,
 			);
 			path = base64TaskTexts_en;
 			sourceTree = "<group>";
@@ -557,6 +572,7 @@
 				BB8FADA92AA503050016BA5C /* Task9Text_base64_en.txt in Resources */,
 				BB8FADAE2AA503050016BA5C /* Task2Text_base64_en.txt in Resources */,
 				BB8FADDA2AA50E8A0016BA5C /* Task3.mp4 in Resources */,
+				BB1F570F2AA67434002857ED /* Task5Text_base64_en.txt in Resources */,
 				BB8FADA72AA503050016BA5C /* Task7Text_base64_en.txt in Resources */,
 				BB9B4F4B2AA48EFB008FEEB8 /* LaunchScreen.storyboard in Resources */,
 				BB8FADAB2AA503050016BA5C /* Task6Text_base64_en.txt in Resources */,
@@ -573,10 +589,10 @@
 				BB9B4F482AA48EFB008FEEB8 /* Assets.xcassets in Resources */,
 				BB8FADAC2AA503050016BA5C /* Task4Text_base64_en.txt in Resources */,
 				BB8FADDC2AA50E8A0016BA5C /* Task1.mp4 in Resources */,
-				BB8FADAF2AA503050016BA5C /* Task5Text_base64_en.txt in Resources */,
 				BB8FAD902AA4FE680016BA5C /* Task3Text_base64.txt in Resources */,
 				BB8FADAD2AA503050016BA5C /* Task3Text_base64_en.txt in Resources */,
 				BB8FADDD2AA50E8A0016BA5C /* Task5.mp4 in Resources */,
+				BB1F57132AA67D8C002857ED /* Localizable.strings in Resources */,
 				BB8FADDB2AA50E8A0016BA5C /* Task2.mp4 in Resources */,
 				BB8FADDE2AA50E8A0016BA5C /* Task4.mp4 in Resources */,
 				BB8FAD8D2AA4FE680016BA5C /* Task1Text_base64.txt in Resources */,
@@ -604,6 +620,7 @@
 				BB1A483C2AA65DCF00668979 /* RouterProtocol.swift in Sources */,
 				BB1A48372AA65D2600668979 /* Router.swift in Sources */,
 				BB8FADCD2AA504DA0016BA5C /* AppOrientationUtility.swift in Sources */,
+				BB1F57182AA67DCC002857ED /* LocalizationKeys.swift in Sources */,
 				BB50384A2AA66B9900F9F400 /* BridgeViewProtocol.swift in Sources */,
 				BB5038462AA66B5D00F9F400 /* BridgePresenter.swift in Sources */,
 				BB1A48352AA65CF500668979 /* AssemblyBuilder.swift in Sources */,
@@ -625,6 +642,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		BB1F57152AA67D8C002857ED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB1F57142AA67D8C002857ED /* en */,
+				BB1F57162AA67D8F002857ED /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		BB9B4F492AA48EFB008FEEB8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
