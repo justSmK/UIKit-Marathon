@@ -78,9 +78,9 @@
 		BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderProtocol.swift; sourceTree = "<group>"; };
 		BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
 		BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewProtocol.swift; sourceTree = "<group>"; };
-		BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenter.swift; path = UIKitMarathon/Main/Views/Contracts/BridgePresenter.swift; sourceTree = SOURCE_ROOT; };
-		BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenterProtocol.swift; path = UIKitMarathon/Main/Views/Contracts/BridgePresenterProtocol.swift; sourceTree = SOURCE_ROOT; };
-		BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgeViewProtocol.swift; path = UIKitMarathon/Main/Views/Contracts/BridgeViewProtocol.swift; sourceTree = SOURCE_ROOT; };
+		BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenter.swift; path = UIKitMarathon/Bridge/Presenter/BridgePresenter.swift; sourceTree = SOURCE_ROOT; };
+		BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenterProtocol.swift; path = UIKitMarathon/Bridge/Presenter/Contracts/BridgePresenterProtocol.swift; sourceTree = SOURCE_ROOT; };
+		BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgeViewProtocol.swift; path = UIKitMarathon/Bridge/Views/Contracts/BridgeViewProtocol.swift; sourceTree = SOURCE_ROOT; };
 		BB8FAD7B2AA4FCE80016BA5C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BB8FAD812AA4FE680016BA5C /* Task7Text_base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task7Text_base64.txt; sourceTree = "<group>"; };
 		BB8FAD822AA4FE680016BA5C /* Task8Text_base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task8Text_base64.txt; sourceTree = "<group>"; };
@@ -185,7 +185,7 @@
 		BB1A482E2AA63A1A00668979 /* Bridge */ = {
 			isa = PBXGroup;
 			children = (
-				BB1A48482AA6672F00668979 /* Presneter */,
+				BB1F570B2AA66EA9002857ED /* Presenter */,
 				BB1A48492AA6673200668979 /* Views */,
 			);
 			path = Bridge;
@@ -259,36 +259,36 @@
 			path = Contracts;
 			sourceTree = "<group>";
 		};
-		BB1A48482AA6672F00668979 /* Presneter */ = {
-			isa = PBXGroup;
-			children = (
-				BB1A484B2AA6673B00668979 /* Contracts */,
-				BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */,
-			);
-			path = Presneter;
-			sourceTree = "<group>";
-		};
 		BB1A48492AA6673200668979 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BB1A484A2AA6673800668979 /* Contracts */,
+				BB1F570D2AA66EB6002857ED /* Contracts */,
 				BB1A482F2AA65C7500668979 /* BridgeViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		BB1A484A2AA6673800668979 /* Contracts */ = {
+		BB1F570B2AA66EA9002857ED /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */,
+				BB1F570C2AA66EAE002857ED /* Contracts */,
+				BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BB1F570C2AA66EAE002857ED /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
 		};
-		BB1A484B2AA6673B00668979 /* Contracts */ = {
+		BB1F570D2AA66EB6002857ED /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
-				BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */,
+				BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
