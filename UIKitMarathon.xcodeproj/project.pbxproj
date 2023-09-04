@@ -152,12 +152,12 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		BB1A48272AA6332200668979 /* Models */ = {
+		BB1A48272AA6332200668979 /* Common Models */ = {
 			isa = PBXGroup;
 			children = (
 				BB8FAD7B2AA4FCE80016BA5C /* Task.swift */,
 			);
-			path = Models;
+			path = "Common Models";
 			sourceTree = "<group>";
 		};
 		BB1A48282AA634D400668979 /* Colors */ = {
@@ -313,7 +313,6 @@
 			isa = PBXGroup;
 			children = (
 				BB1A48312AA65CAC00668979 /* Presenter */,
-				BB1A48272AA6332200668979 /* Models */,
 				BB1A48252AA6331600668979 /* Views */,
 			);
 			path = Main;
@@ -479,6 +478,7 @@
 				BB1A48412AA65EBF00668979 /* Core */,
 				BB8FAD7A2AA4FCB10016BA5C /* Main */,
 				BB1A482E2AA63A1A00668979 /* Bridge */,
+				BB1A48272AA6332200668979 /* Common Models */,
 				BB8FAD9C2AA502AD0016BA5C /* Tasks */,
 			);
 			path = UIKitMarathon;
