@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB1A48242AA62FAD00668979 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48232AA62FAD00668979 /* MainCollectionViewCell.swift */; };
+		BB1A482A2AA634DB00668979 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48292AA634DB00668979 /* AppColors.swift */; };
+		BB1A482D2AA634FB00668979 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A482C2AA634FB00668979 /* AppFonts.swift */; };
+		BB1A48302AA65C7500668979 /* BridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A482F2AA65C7500668979 /* BridgeViewController.swift */; };
+		BB1A48332AA65CB600668979 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48322AA65CB600668979 /* MainPresenter.swift */; };
+		BB1A48352AA65CF500668979 /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48342AA65CF500668979 /* AssemblyBuilder.swift */; };
+		BB1A48372AA65D2600668979 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48362AA65D2600668979 /* Router.swift */; };
+		BB1A483C2AA65DCF00668979 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A483B2AA65DCF00668979 /* RouterProtocol.swift */; };
+		BB1A48402AA65DF700668979 /* AssemblyBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */; };
+		BB1A48442AA65FB700668979 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */; };
+		BB1A48472AA65FF900668979 /* MainCollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */; };
 		BB8FAD7C2AA4FCE80016BA5C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FAD7B2AA4FCE80016BA5C /* Task.swift */; };
 		BB8FAD8A2AA4FE680016BA5C /* Task7Text_base64.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FAD812AA4FE680016BA5C /* Task7Text_base64.txt */; };
 		BB8FAD8B2AA4FE680016BA5C /* Task8Text_base64.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FAD822AA4FE680016BA5C /* Task8Text_base64.txt */; };
@@ -47,12 +58,23 @@
 		BB8FADE02AA50E8A0016BA5C /* Task7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BB8FADD72AA50E8A0016BA5C /* Task7.mp4 */; };
 		BB9B4F3F2AA48EFA008FEEB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F3E2AA48EFA008FEEB8 /* AppDelegate.swift */; };
 		BB9B4F412AA48EFA008FEEB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F402AA48EFA008FEEB8 /* SceneDelegate.swift */; };
-		BB9B4F432AA48EFA008FEEB8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F422AA48EFA008FEEB8 /* MainViewController.swift */; };
+		BB9B4F432AA48EFA008FEEB8 /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B4F422AA48EFA008FEEB8 /* MainCollectionViewController.swift */; };
 		BB9B4F482AA48EFB008FEEB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9B4F472AA48EFB008FEEB8 /* Assets.xcassets */; };
 		BB9B4F4B2AA48EFB008FEEB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9B4F492AA48EFB008FEEB8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB1A48232AA62FAD00668979 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		BB1A48292AA634DB00668979 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		BB1A482C2AA634FB00668979 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		BB1A482F2AA65C7500668979 /* BridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeViewController.swift; sourceTree = "<group>"; };
+		BB1A48322AA65CB600668979 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		BB1A48342AA65CF500668979 /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		BB1A48362AA65D2600668979 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BB1A483B2AA65DCF00668979 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderProtocol.swift; sourceTree = "<group>"; };
+		BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
+		BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewProtocol.swift; sourceTree = "<group>"; };
 		BB8FAD7B2AA4FCE80016BA5C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BB8FAD812AA4FE680016BA5C /* Task7Text_base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task7Text_base64.txt; sourceTree = "<group>"; };
 		BB8FAD822AA4FE680016BA5C /* Task8Text_base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task8Text_base64.txt; sourceTree = "<group>"; };
@@ -95,7 +117,7 @@
 		BB9B4F3B2AA48EFA008FEEB8 /* UIKitMarathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitMarathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9B4F3E2AA48EFA008FEEB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB9B4F402AA48EFA008FEEB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB9B4F422AA48EFA008FEEB8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BB9B4F422AA48EFA008FEEB8 /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		BB9B4F472AA48EFB008FEEB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9B4F4A2AA48EFB008FEEB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB9B4F4C2AA48EFB008FEEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -112,6 +134,156 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB1A48252AA6331600668979 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48452AA65FEB00668979 /* Contracts */,
+				BB1A48262AA6331700668979 /* Cells */,
+				BB9B4F422AA48EFA008FEEB8 /* MainCollectionViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB1A48262AA6331700668979 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48232AA62FAD00668979 /* MainCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BB1A48272AA6332200668979 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB8FAD7B2AA4FCE80016BA5C /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB1A48282AA634D400668979 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48292AA634DB00668979 /* AppColors.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		BB1A482B2AA634F600668979 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A482C2AA634FB00668979 /* AppFonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		BB1A482E2AA63A1A00668979 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48482AA6672F00668979 /* Presneter */,
+				BB1A48492AA6673200668979 /* Views */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		BB1A48312AA65CAC00668979 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48422AA65FAE00668979 /* Contracts */,
+				BB1A48322AA65CB600668979 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BB1A48382AA65DBA00668979 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A483A2AA65DCA00668979 /* Contracts */,
+				BB1A48362AA65D2600668979 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BB1A483A2AA65DCA00668979 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A483B2AA65DCF00668979 /* RouterProtocol.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		BB1A483D2AA65DE200668979 /* AssemblyBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A483E2AA65DF000668979 /* Contracts */,
+				BB1A48342AA65CF500668979 /* AssemblyBuilder.swift */,
+			);
+			path = AssemblyBuilder;
+			sourceTree = "<group>";
+		};
+		BB1A483E2AA65DF000668979 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		BB1A48412AA65EBF00668979 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48382AA65DBA00668979 /* Router */,
+				BB1A483D2AA65DE200668979 /* AssemblyBuilder */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BB1A48422AA65FAE00668979 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		BB1A48452AA65FEB00668979 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		BB1A48482AA6672F00668979 /* Presneter */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A484B2AA6673B00668979 /* Contracts */,
+			);
+			path = Presneter;
+			sourceTree = "<group>";
+		};
+		BB1A48492AA6673200668979 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A484A2AA6673800668979 /* Contracts */,
+				BB1A482F2AA65C7500668979 /* BridgeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB1A484A2AA6673800668979 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		BB1A484B2AA6673B00668979 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
 		BB8FAD782AA4F8E50016BA5C /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +297,8 @@
 		BB8FAD792AA4F8EB0016BA5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB1A482B2AA634F600668979 /* Fonts */,
+				BB1A48282AA634D400668979 /* Colors */,
 				BB8FADCE2AA50E8A0016BA5C /* videos */,
 				BB8FAD9D2AA503050016BA5C /* base64TaskTexts_en */,
 				BB8FAD802AA4FE680016BA5C /* base64TaskTexts_ru */,
@@ -138,8 +312,9 @@
 		BB8FAD7A2AA4FCB10016BA5C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				BB9B4F422AA48EFA008FEEB8 /* MainViewController.swift */,
-				BB8FAD7B2AA4FCE80016BA5C /* Task.swift */,
+				BB1A48312AA65CAC00668979 /* Presenter */,
+				BB1A48272AA6332200668979 /* Models */,
+				BB1A48252AA6331600668979 /* Views */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -301,7 +476,9 @@
 			children = (
 				BB8FAD792AA4F8EB0016BA5C /* Resources */,
 				BB8FAD782AA4F8E50016BA5C /* Application */,
+				BB1A48412AA65EBF00668979 /* Core */,
 				BB8FAD7A2AA4FCB10016BA5C /* Main */,
+				BB1A482E2AA63A1A00668979 /* Bridge */,
 				BB8FAD9C2AA502AD0016BA5C /* Tasks */,
 			);
 			path = UIKitMarathon;
@@ -411,13 +588,24 @@
 				BB8FADCB2AA504C20016BA5C /* CollectionViewControllerCaringCollection.swift in Sources */,
 				BB8FADC82AA504C20016BA5C /* ViewControllerThreeButtons.swift in Sources */,
 				BB8FAD7C2AA4FCE80016BA5C /* Task.swift in Sources */,
-				BB9B4F432AA48EFA008FEEB8 /* MainViewController.swift in Sources */,
+				BB9B4F432AA48EFA008FEEB8 /* MainCollectionViewController.swift in Sources */,
+				BB1A48302AA65C7500668979 /* BridgeViewController.swift in Sources */,
+				BB1A48332AA65CB600668979 /* MainPresenter.swift in Sources */,
+				BB1A48242AA62FAD00668979 /* MainCollectionViewCell.swift in Sources */,
+				BB1A483C2AA65DCF00668979 /* RouterProtocol.swift in Sources */,
+				BB1A48372AA65D2600668979 /* Router.swift in Sources */,
 				BB8FADCD2AA504DA0016BA5C /* AppOrientationUtility.swift in Sources */,
+				BB1A48352AA65CF500668979 /* AssemblyBuilder.swift in Sources */,
+				BB1A482D2AA634FB00668979 /* AppFonts.swift in Sources */,
 				BB8FADC32AA504C20016BA5C /* ViewControllerStretchingPicture.swift in Sources */,
 				BB9B4F3F2AA48EFA008FEEB8 /* AppDelegate.swift in Sources */,
+				BB1A48472AA65FF900668979 /* MainCollectionViewProtocol.swift in Sources */,
 				BB8FADC52AA504C20016BA5C /* ViewControllerInertialSquare.swift in Sources */,
 				BB9B4F412AA48EFA008FEEB8 /* SceneDelegate.swift in Sources */,
+				BB1A482A2AA634DB00668979 /* AppColors.swift in Sources */,
 				BB8FADCA2AA504C20016BA5C /* ViewControllerCompactController.swift in Sources */,
+				BB1A48442AA65FB700668979 /* MainPresenterProtocol.swift in Sources */,
+				BB1A48402AA65DF700668979 /* AssemblyBuilderProtocol.swift in Sources */,
 				BB8FADC72AA504C20016BA5C /* ViewControllerLinkedAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

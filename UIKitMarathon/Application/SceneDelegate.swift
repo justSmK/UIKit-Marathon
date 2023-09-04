@@ -17,8 +17,12 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let assemblyBuilder = AssemblyBuilder()
+        let (navigationController, _) = assemblyBuilder.createInitialSetup()
+        
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = MainViewController()
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 }

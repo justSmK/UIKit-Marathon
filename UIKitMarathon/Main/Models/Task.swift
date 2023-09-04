@@ -9,7 +9,7 @@ import Foundation
 
 typealias Tasks = [Task]
 
-struct Task {
+struct Task: Hashable {
     let id: UInt8
     let title: String
     let text: String
