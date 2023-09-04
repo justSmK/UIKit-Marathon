@@ -29,6 +29,35 @@ final class AssemblyBuilder: AssemblyBuilderProtocol {
     func createBridge(task: Task, router: RouterProtocol) -> UIViewController {
         let view = BridgeViewController()
         
+        let presenter = BridgePresenter(view: view, task: task, router: router)
+        
+        view.presenter = presenter
+        
         return view
+    }
+    
+    func createTaskViewController(id: UInt8) -> UIViewController {
+        switch id {
+        case 1:
+            return ViewControllerGradientAndShadow()
+        case 2:
+            return ViewControllerThreeButtons()
+        case 3:
+            return ViewControllerLinkedAnimation()
+        case 4:
+            return ViewControllerMixerTable()
+        case 5:
+            return ViewControllerCompactController()
+        case 6:
+            return ViewControllerInertialSquare()
+        case 7:
+            return ViewControllerStretchingPicture()
+        case 8:
+            return ViewControllerNativeAvatar()
+        case 9:
+            return CollectionViewControllerCaringCollection()
+        default:
+            return UIViewController()
+        }
     }
 }

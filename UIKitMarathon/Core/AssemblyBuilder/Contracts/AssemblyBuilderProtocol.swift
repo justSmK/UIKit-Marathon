@@ -11,4 +11,5 @@ protocol AssemblyBuilderProtocol {
     func createInitialSetup() -> (UINavigationController, RouterProtocol)
     func createMain(router: RouterProtocol) -> UIViewController
     func createBridge(task: Task, router: RouterProtocol) -> UIViewController
+    func createTaskViewController(id: UInt8) -> UIViewController
 }

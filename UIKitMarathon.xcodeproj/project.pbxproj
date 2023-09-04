@@ -18,6 +18,9 @@
 		BB1A48402AA65DF700668979 /* AssemblyBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */; };
 		BB1A48442AA65FB700668979 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */; };
 		BB1A48472AA65FF900668979 /* MainCollectionViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */; };
+		BB5038462AA66B5D00F9F400 /* BridgePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */; };
+		BB5038482AA66B6E00F9F400 /* BridgePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */; };
+		BB50384A2AA66B9900F9F400 /* BridgeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */; };
 		BB8FAD7C2AA4FCE80016BA5C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8FAD7B2AA4FCE80016BA5C /* Task.swift */; };
 		BB8FAD8A2AA4FE680016BA5C /* Task7Text_base64.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FAD812AA4FE680016BA5C /* Task7Text_base64.txt */; };
 		BB8FAD8B2AA4FE680016BA5C /* Task8Text_base64.txt in Resources */ = {isa = PBXBuildFile; fileRef = BB8FAD822AA4FE680016BA5C /* Task8Text_base64.txt */; };
@@ -75,6 +78,9 @@
 		BB1A483F2AA65DF700668979 /* AssemblyBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilderProtocol.swift; sourceTree = "<group>"; };
 		BB1A48432AA65FB700668979 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
 		BB1A48462AA65FF900668979 /* MainCollectionViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewProtocol.swift; sourceTree = "<group>"; };
+		BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenter.swift; path = UIKitMarathon/Main/Views/Contracts/BridgePresenter.swift; sourceTree = SOURCE_ROOT; };
+		BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgePresenterProtocol.swift; path = UIKitMarathon/Main/Views/Contracts/BridgePresenterProtocol.swift; sourceTree = SOURCE_ROOT; };
+		BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BridgeViewProtocol.swift; path = UIKitMarathon/Main/Views/Contracts/BridgeViewProtocol.swift; sourceTree = SOURCE_ROOT; };
 		BB8FAD7B2AA4FCE80016BA5C /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BB8FAD812AA4FE680016BA5C /* Task7Text_base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task7Text_base64.txt; sourceTree = "<group>"; };
 		BB8FAD822AA4FE680016BA5C /* Task8Text_base64.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Task8Text_base64.txt; sourceTree = "<group>"; };
@@ -257,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				BB1A484B2AA6673B00668979 /* Contracts */,
+				BB5038452AA66B5D00F9F400 /* BridgePresenter.swift */,
 			);
 			path = Presneter;
 			sourceTree = "<group>";
@@ -273,6 +280,7 @@
 		BB1A484A2AA6673800668979 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
+				BB5038492AA66B9900F9F400 /* BridgeViewProtocol.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 		BB1A484B2AA6673B00668979 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
+				BB5038472AA66B6E00F9F400 /* BridgePresenterProtocol.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -595,6 +604,8 @@
 				BB1A483C2AA65DCF00668979 /* RouterProtocol.swift in Sources */,
 				BB1A48372AA65D2600668979 /* Router.swift in Sources */,
 				BB8FADCD2AA504DA0016BA5C /* AppOrientationUtility.swift in Sources */,
+				BB50384A2AA66B9900F9F400 /* BridgeViewProtocol.swift in Sources */,
+				BB5038462AA66B5D00F9F400 /* BridgePresenter.swift in Sources */,
 				BB1A48352AA65CF500668979 /* AssemblyBuilder.swift in Sources */,
 				BB1A482D2AA634FB00668979 /* AppFonts.swift in Sources */,
 				BB8FADC32AA504C20016BA5C /* ViewControllerStretchingPicture.swift in Sources */,
@@ -606,6 +617,7 @@
 				BB8FADCA2AA504C20016BA5C /* ViewControllerCompactController.swift in Sources */,
 				BB1A48442AA65FB700668979 /* MainPresenterProtocol.swift in Sources */,
 				BB1A48402AA65DF700668979 /* AssemblyBuilderProtocol.swift in Sources */,
+				BB5038482AA66B6E00F9F400 /* BridgePresenterProtocol.swift in Sources */,
 				BB8FADC72AA504C20016BA5C /* ViewControllerLinkedAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,6 +15,7 @@ protocol RouterMain {
 protocol RouterProtocol: RouterMain {
     func initialViewController()
     func showBridgeViewController(task: Task)
+    func showTaskViewController(id: UInt8)
     func pop(to viewController: UIViewController)
     func popToRoot()
 }

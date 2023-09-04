@@ -33,6 +33,13 @@ final class Router: RouterProtocol {
         }
     }
     
+    func showTaskViewController(id: UInt8) {
+        if let navigationController {
+            guard let taskViewController = assemblyBuilder?.createTaskViewController(id: id) else { return }
+            navigationController.pushViewController(taskViewController, animated: true)
+        }
+    }
+    
     func pop(to viewController: UIViewController) {
         if let navigationController {
             navigationController.popToViewController(viewController, animated: true)

@@ -9,6 +9,8 @@ import UIKit
 
 final class BridgeViewController: UIViewController {
     
+    var presenter: BridgePresenterProtocol?
+    
     private var item: IndexPath.Element?
     
     private lazy var textViewContent: UITextView = {
@@ -107,4 +109,8 @@ final class BridgeViewController: UIViewController {
         }
         navigationController?.pushViewController(viewController, animated: true)
     }
+}
+
+extension BridgeViewController: BridgeViewProtocol {
+    
 }
