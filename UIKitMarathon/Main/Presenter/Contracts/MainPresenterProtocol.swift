@@ -8,7 +8,9 @@
 import Foundation
 
 protocol MainPresenterProtocol: AnyObject {
-    init(view: MainCollectionViewProtocol, router: RouterProtocol)
+    init(view: MainCollectionViewProtocol,
+         taskDecodingService: TaskDecodingServiceProtocol,
+         router: RouterProtocol)
     var tasks: Tasks { get set }
     func getTasks()
     func tapOnTheCell(task: Task)

@@ -19,7 +19,13 @@ final class AssemblyBuilder: AssemblyBuilderProtocol {
     func createMain(router: RouterProtocol) -> UIViewController {
         let view = MainCollectionViewController()
         
-        let presenter = MainPresenter(view: view, router: router)
+        let decodingService = TaskDecodingService()
+        
+        let presenter = MainPresenter(
+            view: view,
+            taskDecodingService: decodingService,
+            router: router
+        )
         
         view.presenter = presenter
         

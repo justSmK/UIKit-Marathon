@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB17CFD42AA7681D0038A073 /* TaskDecodingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB17CFD32AA7681D0038A073 /* TaskDecodingServiceProtocol.swift */; };
+		BB17CFD62AA7682E0038A073 /* TaskDecodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB17CFD52AA7682E0038A073 /* TaskDecodingService.swift */; };
 		BB1A48242AA62FAD00668979 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48232AA62FAD00668979 /* MainCollectionViewCell.swift */; };
 		BB1A482A2AA634DB00668979 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A48292AA634DB00668979 /* AppColors.swift */; };
 		BB1A482D2AA634FB00668979 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A482C2AA634FB00668979 /* AppFonts.swift */; };
@@ -69,6 +71,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB17CFD32AA7681D0038A073 /* TaskDecodingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDecodingServiceProtocol.swift; sourceTree = "<group>"; };
+		BB17CFD52AA7682E0038A073 /* TaskDecodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDecodingService.swift; sourceTree = "<group>"; };
 		BB1A48232AA62FAD00668979 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 		BB1A48292AA634DB00668979 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		BB1A482C2AA634FB00668979 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
@@ -145,6 +149,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB17CFD12AA768020038A073 /* TaskDecodingService */ = {
+			isa = PBXGroup;
+			children = (
+				BB17CFD22AA768160038A073 /* Contracts */,
+				BB17CFD52AA7682E0038A073 /* TaskDecodingService.swift */,
+			);
+			path = TaskDecodingService;
+			sourceTree = "<group>";
+		};
+		BB17CFD22AA768160038A073 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BB17CFD32AA7681D0038A073 /* TaskDecodingServiceProtocol.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
 		BB1A48252AA6331600668979 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +523,7 @@
 				BB1A48412AA65EBF00668979 /* Core */,
 				BB8FAD7A2AA4FCB10016BA5C /* Main */,
 				BB1A482E2AA63A1A00668979 /* Bridge */,
+				BB17CFD12AA768020038A073 /* TaskDecodingService */,
 				BB1A48272AA6332200668979 /* Common Models */,
 				BB8FAD9C2AA502AD0016BA5C /* Tasks */,
 			);
@@ -607,6 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB17CFD62AA7682E0038A073 /* TaskDecodingService.swift in Sources */,
 				BB8FADC62AA504C20016BA5C /* ViewControllerNativeAvatar.swift in Sources */,
 				BB8FADC92AA504C20016BA5C /* ViewControllerMixerTable.swift in Sources */,
 				BB8FADC42AA504C20016BA5C /* ViewControllerGradientAndShadow.swift in Sources */,
@@ -614,6 +637,7 @@
 				BB8FADC82AA504C20016BA5C /* ViewControllerThreeButtons.swift in Sources */,
 				BB8FAD7C2AA4FCE80016BA5C /* Task.swift in Sources */,
 				BB9B4F432AA48EFA008FEEB8 /* MainCollectionViewController.swift in Sources */,
+				BB17CFD42AA7681D0038A073 /* TaskDecodingServiceProtocol.swift in Sources */,
 				BB1A48302AA65C7500668979 /* BridgeViewController.swift in Sources */,
 				BB1A48332AA65CB600668979 /* MainPresenter.swift in Sources */,
 				BB1A48242AA62FAD00668979 /* MainCollectionViewCell.swift in Sources */,
