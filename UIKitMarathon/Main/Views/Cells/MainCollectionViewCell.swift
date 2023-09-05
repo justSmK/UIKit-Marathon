@@ -16,7 +16,6 @@ final class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Private properties
     
     private enum Constants {
-        static let borderWidth: CGFloat = 1
         static let cornerRadius: CGFloat = 10
     }
     
@@ -45,29 +44,12 @@ final class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Private methods
     
     private func setupContentView() {
-//        contentView.backgroundColor = .orange
-        
-//        contentView.layer.borderWidth = Constants.borderWidth
-//        contentView.layer.borderColor = UITraitCollection.current.userInterfaceStyle == .light ? UIColor.black.cgColor : UIColor.white.cgColor
+        contentView.backgroundColor = AppColors.backgroundViewCell
         contentView.layer.cornerRadius = Constants.cornerRadius
         contentView.layer.cornerCurve = .continuous
     }
     
-//    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-//        switch UITraitCollection.current.userInterfaceStyle {
-//        case .dark:
-//            contentView.layer.borderColor = UIColor.white.cgColor
-//        case .light:
-//            contentView.layer.borderColor = UIColor.black.cgColor
-//        case .unspecified:
-//            break
-//        @unknown default:
-//            break
-//        }
-//    }
-    
     private func setupLayout() {
-        contentView.backgroundColor = .systemGray6
         contentView.addSubview(labelTitle)
         NSLayoutConstraint.activate([
             labelTitle.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
@@ -76,11 +58,9 @@ final class MainCollectionViewCell: UICollectionViewCell {
         
     }
     
-    // MARK: - Public methods
+    // MARK: - Internal methods
     
-    public func setupViewCell(title: String) {
+    func setupViewCell(title: String) {
         labelTitle.text = title
     }
-    
-
 }

@@ -10,5 +10,7 @@ import Foundation
 protocol BridgePresenterProtocol: AnyObject {
     var task: Task { get }
     func showTaskViewController()
-    func showVideoTask()
+    func prepareVideo()
+    func playVideo()
+    func openYouTubeVideo()
 }

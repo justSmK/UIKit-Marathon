@@ -35,6 +35,8 @@ final class AssemblyBuilder: AssemblyBuilderProtocol {
     func createBridge(task: Task, router: RouterProtocol) -> UIViewController {
         let view = BridgeViewController()
         
+        view.title = task.title
+        
         let presenter = BridgePresenter(view: view, task: task, router: router)
         
         view.presenter = presenter

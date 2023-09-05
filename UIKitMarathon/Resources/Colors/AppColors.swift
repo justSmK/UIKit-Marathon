@@ -9,4 +9,7 @@ import UIKit.UIColor
 
 enum AppColors {
     static let label = UIColor.label
+    static let backgroundViewCell = UIColor.systemGray6
+    static let backgroundTextViewContent = UIColor.systemGray6
+    static let background = UIColor.systemBackground
 }

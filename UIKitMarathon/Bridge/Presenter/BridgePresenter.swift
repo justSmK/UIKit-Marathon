@@ -6,16 +6,19 @@
 //
 
 import Foundation
+import AVFoundation
+import UIKit.UIApplication
+import AVKit
 
 final class BridgePresenter: BridgePresenterProtocol {
     
-    
+    var task: Task
     
     private weak var view: BridgeViewProtocol?
     
     private let router: RouterProtocol
     
-    var task: Task
+    private var player: AVPlayer?
     
     init(view: BridgeViewProtocol, task: Task, router: RouterProtocol) {
         self.view = view
@@ -28,7 +31,24 @@ final class BridgePresenter: BridgePresenterProtocol {
         router.showTaskViewController(id: id)
     }
     
-    func showVideoTask() {
-        
+    func prepareVideo() {
+        let id = task.id
+        if let path = Bundle.main.path(forResource: "Task\(id)", ofType: "mp4") {
+            let videoURL = URL(fileURLWithPath: path)
+            player = AVPlayer(url: videoURL)
+        }
+    }
+    
+    func playVideo() {
+        let playerViewController = AVPlayerViewController()
+        playerViewController.player = player
+        view?.present(playerViewController, animated: true, completion: { [weak self] in
+            self?.player?.play()
+        })
+    }
+    
+    func openYouTubeVideo() {
+        let url = task.url
+        UIApplication.shared.open(url)
     }
 }

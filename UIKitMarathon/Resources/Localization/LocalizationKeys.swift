@@ -10,6 +10,7 @@ import Foundation
 enum LocalizationKeys {
     private static let _showVideo: String = "showVideo"
     private static let _showSolution: String = "showSolution"
+    private static let _showYouTubeSolution: String = "showYouTube"
 }
 
 extension LocalizationKeys {
@@ -19,6 +20,10 @@ extension LocalizationKeys {
     
     static var showSolution: String {
         return Self._showSolution.localized
+    }
+    
+    static var showYouTubeSolution: String {
+        return Self._showYouTubeSolution.localized
     }
 }
 

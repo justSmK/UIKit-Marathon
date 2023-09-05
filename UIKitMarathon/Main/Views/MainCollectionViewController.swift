@@ -44,6 +44,7 @@ final class MainCollectionViewController: UICollectionViewController {
     }
 
     private func setupLayout() {
+        view.backgroundColor = AppColors.background
         let layout = setupCompositionalLayout()
         self.collectionView.collectionViewLayout = layout
     }
